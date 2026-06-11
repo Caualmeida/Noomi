@@ -1,0 +1,167 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* PÁGINA */
+
+body{
+    font-family: Georgia, serif;
+}
+
+.login-page{
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        180deg,
+        #8B3DFF 0%,
+        #5A1BC7 100%
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER */
+
+.login-container{
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* LOGO */
+
+.logo{
+    font-size: 100px;
+    font-weight: 300;
+    color: black;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/* FORM */
+
+.form-login{
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-box{
+    width: 100%;
+    height: 75px;
+
+    border: none;
+    border-radius: 18px;
+
+    padding: 0 25px;
+
+    background-color: #E9E9E9;
+
+    font-size: 22px;
+}
+
+.input-box::placeholder{
+    color: #7A7A7A;
+}
+
+/* ESQUECEU SENHA */
+
+.esqueceu{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* BOTÕES */
+
+.btn-login,
+.btn-cadastro{
+    width: 100%;
+    height: 75px;
+
+    border: none;
+    border-radius: 22px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-login{
+    background-color: #C58CFF;
+    color: white;
+}
+
+.btn-cadastro{
+    background-color: #C58CFF;
+    color: white;
+}
+
+.btn-login:hover,
+.btn-cadastro:hover{
+    transform: scale(1.02);
+}
+
+/* OU */
+
+.ou{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+    .logo{
+        font-size: 60px;
+    }
+
+    .subtitulo{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .input-box{
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .btn-login,
+    .btn-cadastro{
+        height: 65px;
+        font-size: 18px;
+    }
+}
